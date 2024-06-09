@@ -1,0 +1,5 @@
+1. SYS 계정에서 로그인 후 다음 작업을 '반드시' 진행할것
+alter session set "_oracle_script" = true;
+GRANT EXECUTE ON DBMS_CRYPTO TO Scott;
+
+2. 이후 모든 작업은 Scott 계정에서 진행할 것 특히 Procedure.sql은 무조건 먼저 실행해 컴파일시킬것
